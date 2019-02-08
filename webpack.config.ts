@@ -9,6 +9,10 @@ const configuration: Configuration = {
     app: join(__dirname, 'src/index.ts')
   },
 
+  resolve: {
+    extensions: ['.ts', '.tsx', '.wasm', '.mjs', '.js', '.jsx', '.json']
+  },
+
   module: {
     rules: [
       { test: /\.tsx?$/, loader: 'ts-loader' }
